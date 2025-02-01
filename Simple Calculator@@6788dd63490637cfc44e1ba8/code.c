@@ -1,24 +1,23 @@
 #include <stdio.h>
 int main() {
-    float a, b;
+    int a, b;
     char c;
-    scanf("%f %f %c", &a, &b, &c);
+    scanf("%d %d %c", &a, &b, &c);
     switch (c) {
         case '+':
-            printf("%.2f", a + b);
+            printf("%d", a + b);
             break;
         case '-':
-            printf("%.2f", a - b);
+            printf("%d", a - b);
             break;
         case '*':
-            printf("%.2f", a * b);
+            printf("%d", a * b); // Fixed the multiplication case
             break;
         case '/':
-            if (b != 0)
-                printf("%.2f", a / b);
-            else
-                printf("Error: Division by zero");
+            printf("%d", a / b);
             break;
+        default:
+            printf("Invalid operation");
     }
     return 0;
 }
