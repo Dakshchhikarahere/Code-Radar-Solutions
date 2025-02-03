@@ -11,13 +11,11 @@ int main() {
             printf("%d", a - b);
             break;
         case '*':
-            printf("%d", a * b); // Fixed the multiplication case
+            printf("%d", a * b); 
             break;
         case '/':
             printf("%d", a / b);
             break;
-        default:
-            printf("Invalid operation");
     }
     return 0;
 }
